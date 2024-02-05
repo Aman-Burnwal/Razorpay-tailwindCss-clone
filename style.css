@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.companiesList{
+    animation:  30s infinite linear  company;
+    /* animation: comapany 20s timing-function 2s infinite direction fill-mode; */
+}
+
+
+@keyframes company {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -160%;
+    }
+}
