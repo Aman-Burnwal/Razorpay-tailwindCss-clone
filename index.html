@@ -856,11 +856,11 @@
 
         <!-- business demo -->
 
-        <section class="w-full h-screen relative bg-[#F5F8FE] -mt-10 -z-10 ">
+        <section class="relative w-11/12 mx-auto  bg-[#F5F8FE] -mt-10 -z-10 ">
 
-            <div class="w-full max-w-[1080px] h-full  flex justify-between mx-auto pb-10 my-auto items-center">
+            <div class="relative w-full max-w-[1080px]  flex flex-col md:flex-row justify-between mx-auto pb-10 my-auto items-center">
                 <!-- left -->
-                <div class="  flex flex-col gap-6  w-full max-w-[580px] overflow-hidden">
+                <div class=" relative flex flex-col gap-6 mt-11 md:mt-0   w-full max-w-[580px] overflow-hidden">
                     <div>
                         <h2 class="font-bold text-[25px] py-1 text-deepBlueHead">Join the 50,00,000+ businesses using
                             Razorpay
@@ -875,14 +875,15 @@
                     <p>Focus on your business while we handle the complexities of payments for you.</p>
                 </div>
                 <!-- right part image sliding -->
-                <div class="relative w-full max-w-[500px]   h-full">
+                <div class="relative lg:w-full lg:max-w-[500px]   h-full">
                     <!-- blur part -->
                     <div class=" absolute  w-full  top-5 bg-[#F5F8FE] h-20  opacity-60"></div>
                     <div class="absolute  w-full  bottom-0 bg-[#F5F8FE] h-20 opacity-60  "></div>
                     <!-- sliding image -->
-                    <div class="relative h-full w-full overflow-hidden  ">
+                    <div class="relative h-[500px] w-9/12 md:w-11/12  mx-auto  mt-5 md:mt-0 md:h-screen  overflow-hidden  ">
                         <img src="./images/comanies.png" loading="lazy" alt=""
-                            class="relative object-cover overflow-y-hidden companiesList duration-700 -z-10">
+                            class="relative object-cover overflow-y-hidden companiesList duration-700 -z-10"
+                        >
                     </div>
 
                 </div>
@@ -905,17 +906,17 @@
                     <div class="h-1 w-6 bg-greenLight"></div>
                 </div>
             </div>
-            <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute top-1/4 left-[10%]">
+            <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute hidden md:block top-1/4 left-[10%]">
             <!-- message part -->
             <div class="relative w-full mt-20 ">
-                <div class="flex flex-row justify-evenly gap-24 max-w-[800px] mx-auto w-full ">
+                <div class="w-11/12 flex flex-col md:flex-row justify-between gap-24 max-w-[800px] mx-auto  ">
                     <!-- left -->
-                    <div class="">
+                    <div class="relative flex justify-center items-center  ">
 
-                        <img src="./images/testimonial.jpg" alt="" height="300px" width="300px" class="rounded-xl">
+                        <img src="./images/testimonial.jpg" alt=""  class="rounded-xl w-200px lg:h-[300px] h-200px lg:w-[300px]">
 
                     </div>
-                    <div class="relative pt-7  ">
+                    <div class="relative pt-7 flex flex-col items-center justify-center ">
                         <!-- right -->
                         <img src="images/quotes.svg" alt="" height="30px" width="40px" class="object-cover">
                         <h3 class="text-3xl font-mullish   font-extralight">Readymade Closed Wallet <br> Solution For
@@ -929,15 +930,15 @@
                     </div>
                 </div>
 
-                <button class="absolute top-1/2 left-24 bg-slate-300 w-16 h-16  rounded-full
-                    flex items-center justify-center">
-                    <div class="rotate-180 bg-slate-300 w-10 h-10 rounded-full mix-blend-multiply
-                        ">
-                        <i class="text-3xl font-extrabold font-mullish   ">&#x3e;</i>
+                <button class=" hidden md:flex absolute top-1/2 left-[4vw] bg-slate-300 w-10 h-10 lg:w-16 lg:h-16  rounded-full
+                     items-center justify-center">
+                    <div class="rotate-180 bg-slate-300 w-5 h-5 lg:w-10 lg:h-10 rounded-full mix-blend-multiply"
+                    >
+                        <i class="text-base lg:text-3xl font-extrabold font-mullish   ">&#x3e;</i>
                     </div>
                 </button>
-                <button class="absolute top-1/2 right-16 bg-slate-300 w-16 h-16  rounded-full
-                                flex items-center justify-center">
+                <button class="hidden md:flex absolute top-1/2 right-16 bg-slate-300 w-10 h-10 lg:w-16 lg:h-16  rounded-full
+                                 items-center justify-center">
                     <div class=" bg-slate-300 w-10 h-10 rounded-full mix-blend-multiply
                                     ">
                         <i class="text-3xl font-extrabold font-mullish   ">&#x3e;</i>
@@ -948,7 +949,7 @@
             </div>
 
 
-            <div class="mx-auto max-w-fit pt-10 mb-12 ">
+            <div class=" sm:flex hidden mx-auto max-w-fit pt-10 mb-12 ">
                 <input type="radio" name="page" class="bg-red-500 checked:bg-red-700" />
                 <input type="radio" name="page" checked />
                 <input type="radio" name="page" id="" />
@@ -959,7 +960,7 @@
         <!--razor pay super charge-->
         <section class=" relative  h-screen">
 
-            <div class="w-full h-full bg-[url(/images/CTABg.svg)]  bg-no-repeat bg-right  bg-cover ctabg">
+            <div class="w-full h-full bg-[url(/images/CTABg.svg)] flex justify-between bg-no-repeat bg-center md:bg-right   lg:bg-cover ctabg">
                 <div class="w-10/12 mx-auto  flex justify-between items-center m-6 pt-10">
                     <div class="font-mullish flex flex-col justify-between  gap-4 pt-20  ">
                         <h2 class="text-white text-2xl font-bold font-mullish ">Supercharge your business with Razorpay
@@ -991,7 +992,7 @@
 
                         </button>
                     </div>
-                    <div class="">
+                    <div class="hidden md:block md:w-[200px] md:h-[200px] lg:w-[300px] h-full w-full">
                         <img src="./images/ctaImg.svg" alt="">
                     </div>
                 </div>
@@ -1003,7 +1004,7 @@
         <!-- footer section -->
         <footer class="relative w-full bg-[#EEF8FF] ">
 
-            <div class="relative grid grid-cols-4  mx-auto gap-8 w-11/12  max-w-[1080px] pb-10 font-mullish pt-10">
+            <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mx-auto gap-8 w-11/12  max-w-[1080px] pb-10 font-mullish pt-10">
                 <!-- col1 -->
                 <div class=" relative flex flex-col  gap-4 flex-wrap font-mullish ">
                     <img src="./images/logo-dark.svg" alt="" width="130px" height="70px" loading="lazy">
